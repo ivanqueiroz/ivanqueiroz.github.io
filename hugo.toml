@@ -1,5 +1,6 @@
 baseURL = 'https://ivanqueiroz.dev/'
-languageCode = 'pt-br'
+defaultContentLanguage='pt-br'
+languageCode = 'pt-BR'
 title = 'Ivan Queiroz'
 theme = 'poison'
 pluralizelisttitles = false
@@ -9,9 +10,9 @@ pluralizelisttitles = false
 
 [services]
     [services.disqus]
-        shortname = 'ivanqueiroz.dev'
+        shortname = 'blogivanqueiroz'
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
-disqusShortname = "ivanqueiroz.dev"
+disqusShortname = "blogivanqueiroz"
 
 [params]
     plausible = true
