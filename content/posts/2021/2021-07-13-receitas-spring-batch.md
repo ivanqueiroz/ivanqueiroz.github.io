@@ -11,7 +11,7 @@ tags: ["spring", "batch", "java"]
 ---
 
 Costuma criar aplicações em lote em Java? Pois, saiba que além de ter uma [especificação](https://jcp.org/en/jsr/detail?id=352) para tratar essas aplicações, há
-um framework muito bom para ajudar a criar e padronizar o código dos mesmos, o **Spring Batch**! Nesse artigo vou colocar umas pequenas dicas que podem servir
+um framework ótimo para criar e padronizar o código dos mesmos, o **Spring Batch**! Nesse artigo vou colocar umas pequenas dicas que podem servir
 para outras pessoas assim como me ajudaram muito.
 
 > "*É fazendo que se aprende a fazer aquilo que se deve aprender a fazer.*"
