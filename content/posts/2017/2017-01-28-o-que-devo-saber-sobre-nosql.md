@@ -11,7 +11,7 @@ tags: [ "nosql", "banco de dados" ]
 O modelo relacional é o tipo mais utilizado pela maioria dos bancos de dados mais populares do mercado, mas ao passar
 dos anos o volume de dados foi crescendo e a forma de se extrair informações foram se tornando cada vez mais custosas
 nesse modelo, o que levou a criação de novas técnicas como utilizar *datawarehouses* para geração de relatórios, views
-materializadas etc. Além disso novas necessidades surgiram como escalabilidade, baixo tempo de leitura e resposta e
+materializadas, etc., além disso, novas necessidades surgiram como escalabilidade, baixo tempo de leitura e resposta e
 flexibilidade de modelagem, esse novo ambiente fez com que algumas pessoas questionassem a forma de armazenamento de
 dados e desse pensamento surgiu o NoSQL (not only SQL).
 
@@ -30,7 +30,9 @@ relacional é excelente, pois após a criação do *schema* na base, temos certe
 da mesma forma e, caso a normalização esteja bem feita, não teremos dados redundantes salvos.
 
 Então acredito que o modelo não é falho, longe disso, na realidade é tão bom que a anos não houve intenção de mudá-lo e
-hoje ainda é possível utilizá-lo com ambientes não propícios, escalando as máquinas horizontalmente ou verticalmente (apesar de também ser um processo custoso) ou simplesmente renunciando a algumas características da normalização (chaves, relacionamentos etc).
+hoje ainda é possível utilizá-lo com ambientes não propícios, escalando as máquinas horizontalmente ou verticalmente 
+(apesar de também ser um processo custoso) ou simplesmente renunciando a algumas características da normalização 
+(chaves, relacionamentos etc).
 
 ## Cenários em que o relacional não atende bem
 
@@ -72,20 +74,20 @@ Atualmente existem 4 tipos:
 * **chave-valor** - os registros são armazenados como uma coleção de elementos indexados recuperados por uma chave.
   Funciona muito bem para informações no formato de listas;
 
-{% include image.html url="/images/20170128/key_value_nosql.svg" description="Modelo chave valor" %}
+![Modelo chave valor](/images/20170128/key_value_nosql.svg)
 
 * **colunar** - registro são armazenados em uma tabela, mas cada registro pode possuir várias colunas;
 
-{% include image.html url="/images/20170128/column_nosql.svg" description="Modelo colunar" %}
+![Modelo colunar](/images/20170128/column_nosql.svg)
 
 * **documento** - cada registro é um documento que pode ou não fazer parte de uma coleção;
 
-{% include image.html url="/images/20170128/document_nosql.svg" description="Modelo orientado a documentos" %}
+![Modelo orientado a documentos](/images/20170128/document_nosql.svg) 
 
 * **grafo** - os registros são nós em um grafo interligados por arestas que representam o tipo de relacionamento entre
   eles;
 
-{% include image.html url="/images/20170128/graph_nosql.svg" description="Modelo orientado a documentos" %}
+![Modelo orientado a documentos](/images/20170128/graph_nosql.svg) 
 
 Cada tipo possui vantagens e desvantagens para cenários diversos e devem ser avaliados conforme a necessidade da
 aplicação.

@@ -35,3 +35,12 @@ a:hover {
     font-family: Roboto-Medium;
     src: url('/fonts/Roboto-Medium.ttf');
 }
+
+.CodeMirror-code pre {
+    background-color: white !important;
+    color: black !important;
+}
+
+p > img {
+    background-color: white;
+}
