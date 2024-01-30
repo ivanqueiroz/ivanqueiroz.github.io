@@ -3,7 +3,6 @@ title: "Integração Poderosa: Spring Boot + JavaFX"
 description: ""
 date: 2024-01-27T15:19:52.666Z
 preview: ""
-draft: true
 tags:
   [
     spring boot,
