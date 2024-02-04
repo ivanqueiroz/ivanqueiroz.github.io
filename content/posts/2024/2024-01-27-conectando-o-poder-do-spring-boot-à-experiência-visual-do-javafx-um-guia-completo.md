@@ -16,25 +16,31 @@ tags:
 categories: [javafx, spring boot, java, programação, aplicações desktop]
 ---
 
-Este artigo tem como objetivo mostrar como é possível combinar o Spring Boot e o JavaFx, permitindo a criação de aplicações desktop modernas e eficientes. O Spring Boot é um framework de injeção de dependência que permite a criação de aplicações Java de forma rápida e fácil. O JavaFx, por sua vez, é uma biblioteca gráfica para a criação de interfaces de usuário em Java. Para isso será mostrada uma aplicação de controle de tarefas utilizando Kanban.
+Este artigo tem como objetivo mostrar como é possível combinar o Spring Boot e o JavaFx, permitindo a criação de aplicações desktop, modernas e eficientes. O Spring Boot é uma ferramenta poderosa para a criação de aplicativos e conta um excelente gerenciador de injeção de dependência que permite a criação de aplicação Java de forma rápida e fácil. O JavaFx, por sua vez, é uma biblioteca gráfica para a criação de interfaces de usuário em Java. Para isso será mostrada uma aplicação de controle de tarefas utilizando Kanban.
 
 > “_Trabalhar em equipe é a capacidade de trabalhar juntos em direção a uma visão comum_.”
 >
 > -- Andrew Carnegie
 
+## Uma aplicação Kanban para desktop
+
+Durante as minhas férias comecei a organizar alguns projetos pessoais e veio na minha mente como seria criar uma aplicação de controle de tarefas que utilizasse Kanban. Eu sei que existem muitas aplicações disponíveis, mas a ideia era entender os desafios de criar um programa desses e também experimentar tecnologias, não querendo ser muito radical e ir para algo muito fora do Java (afinal estava de férias) e decidi revisitar o JavaFX por ser uma tecnologia que me atraiu muito na revisão para o Java 8, e por sempre ter uma preferência por desenvolvimento desktop.
+
+A aplicação deveria ser simples e teria apenas o básico, permitindo criar, recuperar e excluir cards no board. Além do básico outra funcionalidade importante seria arrastar o card e alterar o status do mesmo, tendo um controle maior do andamento da tarefa. Toda a interface seria em JavaFX, possibilitando a animação de drag and over, interface customizável e interoperabilidade, etc., mas além disso, gostaria de ter todas as facilidades do Spring Boot para controle de injeção de dependência, conexão com banco de dados, agendar jobs, etc.
+
 ## Uma pequena explicação do que é JavaFX
 
 ![JavaFX](/images/2024/01/27/image.png)
 
-O JavaFX representa uma plataforma de desenvolvimento para interfaces gráficas de usuário (GUI) em aplicativos destinados a desktops, dispositivos móveis e sistemas embarcados. Essa plataforma, construída com base no Java e de código aberto, capacita os desenvolvedores a conceber aplicativos sofisticados e interativos, dotados de recursos avançados em termos de gráficos, animação e multimídia{{< sup "1" >}}.
+O JavaFX é uma plataforma para o desenvolvimento de aplicativos GUI para desktops, dispositivos móveis e sistemas embarcados. Essa plataforma, que é de código aberto e baseada no Java, permite que os desenvolvedores criem aplicativos complexos e interativos com recursos de animação, gráficos e multimídia{{< sup "1" >}}.
 
-Em sua essência, o JavaFX representa uma evolução em relação ao Swing, que foi a biblioteca de GUI anteriormente oferecida pela Oracle. A proposta do JavaFX é proporcionar uma experiência de desenvolvimento mais acessível e robusta{{< sup "2" >}}. A sua relevância no âmbito do desenvolvimento de interfaces gráficas é destacada pela oferta de uma ampla gama de recursos, os quais possibilitam a criação de interfaces de usuário envolventes e dinâmicas. Entre esses recursos, incluem-se uma API dedicada a gráficos 2D e 3D, suporte para animações, efeitos visuais, implementação de folhas de estilo CSS, manipulação de áudio e vídeo, e compatibilidade com dispositivos de entrada como mouse, teclado e telas sensíveis ao toque{{< sup "1" >}}.
+O JavaFX é essencialmente uma mudança do Swing, a biblioteca de GUI anteriormente fornecida pela Oracle. O objetivo do JavaFX é fornecer uma experiência de desenvolvimento mais acessível e robusta{{< sup "2" >}}. Possui uma ampla gama de recursos que oferece permite a criação de interfaces de usuário atraentes e dinâmicas, tornando-o importante no campo do desenvolvimento de interfaces gráficas. Uma API dedicada a gráficos 2D e 3D, suporte para animações, efeitos visuais, implementação de folhas de estilo CSS, manipulação de áudio e vídeo e compatibilidade com dispositivos de entrada como telas sensíveis ao toque e mouse estão entre os recursos.{{< sup "1" >}}.
 
-Vale ressaltar que o JavaFX adota um pipeline de gráficos, conhecido como Prism2, otimizado para o processamento de imagens, empregando, de forma interna, tecnologias como DirectX e OpenGL2 para uma eficiente aceleração gráfica, seja por meio de renderização por software ou hardware. Adicionalmente, o JavaFX integra uma camada de toolkit de janela Glass, dependente da plataforma, para uma interação fluida com o sistema operacional nativo, operando de modo assíncrono no gerenciamento de janelas, eventos e temporizadores{{< sup "2" >}}.
+O Prism{{< sup "2" >}}, um pipeline de gráficos otimizado para o processamento de imagens, é usado pelo JavaFX. Ele integra tecnologias como DirectX e OpenGL2 para uma aceleração gráfica eficaz, seja por renderização por software ou hardware. Além disso, o JavaFX incorpora uma seção de um conjunto de ferramentas de janela Glass que depende da plataforma para que possa interagir com facilidade com o sistema operacional nativo. Isso permite que o gerenciamento de janelas, eventos e temporizadores funcionem de forma assíncrona{{< sup "2" >}}.
 
-Adicionalmente, o JavaFX se destaca por sua alta customização e extensibilidade, conferindo aos desenvolvedores a capacidade de criar componentes personalizados e integrar-se facilmente com outras tecnologias Java, como o Java SE e o Java EE{{< sup "3" >}}.
+Além disso, a flexibilidade e a customização excepcionais do JavaFX permitem que os desenvolvedores criem componentes personalizados e integrem-se facilmente com outras tecnologias Java, como Java SE e Java EE.{{< sup "3" >}}.
 
-O JavaFX, ao representar uma convergência de inovação e praticidade, emerge como uma ferramenta instrumental no panorama do desenvolvimento de interfaces gráficas. Sua propensão para a personalização e integração harmoniosa com tecnologias correlatas confirma sua posição proeminente no ecossistema Java, proporcionando aos desenvolvedores uma plataforma robusta e versátil para a materialização de suas visões criativas.
+Ao representar uma convergência de inovação e praticidade, o JavaFX aparece como uma ferramenta útil no campo do desenvolvimento de interfaces gráficas. Sua posição proeminente no ecossistema Java é confirmada por sua capacidade de personalização e integração com tecnologias relacionadas, oferecendo aos desenvolvedores uma plataforma robusta e versátil para materializar suas ideias criativas.
 
 Aqui estão algumas das features do JavaFX:
 
@@ -48,21 +54,15 @@ Aqui estão algumas das features do JavaFX:
 
 ![Spring Boot](/images/2024/01/27/spring_boot_logo.png)
 
-O Spring Boot, um framework de código aberto fundamentado em Java, simplifica sobremaneira o desenvolvimento e a implementação de aplicações web. Como extensão do Spring Framework, que se destaca por oferecer uma plataforma abrangente voltada para o desenvolvimento de aplicações Java empresariais, o Spring Boot é notável por sua capacidade de simplificar a configuração e personalização das aplicações.
+O Spring Boot, um framework de código aberto baseado em Java, torna muito mais fácil criar e implementar aplicações web. O Spring Boot é uma extensão do Spring Framework, que se destaca por fornecer uma plataforma abrangente voltada para o desenvolvimento de aplicações Java empresariais. Sua capacidade de simplificar a configuração e personalização das aplicações é uma das suas características mais notáveis.
 
-Este framework inovador aprimora o processo de desenvolvimento de aplicações web de diversas maneiras, abrindo mão da necessidade de criar arquivos XML de configuração. Em vez disso, utiliza propriedades ou anotações para definir os beans e as dependências do Spring. A inteligência embutida do Spring Boot detecta bibliotecas disponíveis no classpath, configurando-as de maneira astuta para evitar conflitos e redundâncias{{< sup "5" >}}.
+Este framework inovador elimina a necessidade de criar arquivos XML de configuração, melhorando o processo de desenvolvimento de aplicações web de várias maneiras. Em vez disso, é melhor usar anotações ou propriedades para identificar os grãos e as dependências do verão. A inteligência embutida do Spring Boot identifica bibliotecas disponíveis no classpath e as configura de maneira astuta para evitar conflitos e redundâncias{{< sup "5" >}}.
 
-A notável característica que permite a execução da aplicação como um jar executável, dispensando a necessidade de um servidor web externo, como o Tomcat ou o Jetty, destaca-se como uma das vantagens distintivas do Spring Boot. Adicionalmente, a presença de uma variedade de iniciadores (starters) facilita a integração com outras tecnologias, abrangendo bancos de dados, segurança, cache, web services, testes, entre outras áreas.
+Uma das principais vantagens do Spring Boot é sua característica notável que permite que an aplicação seja executada como um jar executável, eliminando a necessidade de um servidor web externo, como o Tomcat ou o Jetty. Além disso, an existência de vários iniciadores (starters) facilita an integração com outras tecnologias, como bancos de dados, segurança, cache, web services, testes e muito mais.
 
-Um recurso de destaque é a ferramenta web conhecida como [Spring Initializr](https://start.spring.io/), que possibilita a geração rápida e fácil de um projeto Spring Boot com as dependências e configurações desejadas. Complementando isso, o Spring Boot incorpora recursos prontos para produção, incluindo métricas, verificações de saúde, configuração externa, logs, atuadores, entre outros.
+A ferramenta web chamada [Spring Initializr] (https://start.spring.io/) é um recurso importante que permite a criação rápida e simples de um projeto Spring Boot com as dependências e configurações desejadas. O Spring Boot também inclui recursos prontos para produção, como métricas, verificações de saúde, configuração externa, logs e atuadores.
 
-Ao adotar o Spring Boot, os desenvolvedores podem direcionar seu foco para a lógica de negócio da aplicação, sem se deter nos pormenores da infraestrutura e configuração. Além disso, o Spring Boot viabiliza a criação descomplicada de aplicações baseadas em microsserviços, uma abordagem que favorece a implementação de pequenos serviços independentes que se comunicam harmonicamente, ampliando assim a escalabilidade, resiliência e flexibilidade das aplicações{{< sup "6" >}}.
-
-## Uma aplicação Kanban para desktop
-
-Durante as minhas férias comecei a organizar alguns projetos pessoais e veio na minha mente como seria criar uma aplicação de controle de tarefas que utilizasse Kanban. Eu sei que existem muitas aplicações disponíveis, mas a ideia era entender os desafios de criar um programa desses e também experimentar tecnologias, não querendo ser muito radical e ir para algo muito fora do Java (afinal estava de férias) e decidi revisitar o JavaFX por ser uma tecnologia que me atraiu muito na revisão para o Java 8, e por sempre ter uma preferência por desenvolvimento desktop.
-
-A aplicação deveria ser simples e teria apenas o básico, permitindo criar, recuperar e excluir cards no board. Além do básico outra funcionalidade importante seria arrastar o card e alterar o status do mesmo, tendo um controle maior do andamento da tarefa. Toda a interface seria em JavaFX, possibilitando a animação de drag and over, interface customizável e interoperabilidade etc. Mas além disso, gostaria de ter todas as facilidades do Spring Boot para controle de injeção de dependência, conexão com banco de dados, agendar jobs etc.
+Ao usar o Spring Boot, os desenvolvedores podem se concentrar na lógica de negócios da aplicação sem se preocupar com as especificações de infraestrutura e configuração. Além disso, com o Spring Boot, é possível criar aplicações baseadas em microsserviços de forma mais fácil. Essa abordagem permite an implementação de pequenos serviços independentes que se comunicam harmonicamente, aumentando an escalabilidade, resiliência e flexibilidade das aplicações{{< sup "6" >}}.
 
 ## Modelagem do negócio
 
@@ -328,6 +328,10 @@ Outra necessidade que surgiu na aplicação foi o de salvar o estado do board Ka
     }
   }
 ```
+
+## GemFX
+
+Um destaque importante que gostaria de citar que no projeto foi utilizada a lib [GemFX](https://github.com/dlsc-software-consulting-gmbh/GemsFX). Procurei algum componente pronto de _drag and drop_ em JavaFX que fosse parecido com um quadro Kanban, e o único que encontrei foi o dessa ótima lib. A mesma possui um componente chamado [MultiColumnListView](https://github.com/dlsc-software-consulting-gmbh/GemsFX/blob/master/gemsfx/src/main/java/com/dlsc/gemsfx/MultiColumnListView.java) que ainda esté em fase de desenvolvimento, mas atendeu bem ao propósito dessa aplicação.
 
 ## Conclusão
 
