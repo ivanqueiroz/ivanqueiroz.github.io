@@ -14,16 +14,23 @@
             }
         </script>
         <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
-    {{ else if .Site.Config.Services.Disqus.Shortname }}
-    <div id="disqus_thread"></div>
-    <script>
-        (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://blogivanqueiroz.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {{ else if and .Site.Params.giscus .Site.Params.giscus.category_id }}
+        {{ with .Site.Params.giscus }}
+        <script src="https://giscus.app/client.js"
+                data-repo="{{ .repo }}"
+                data-repo-id="{{ .repo_id }}"
+                data-category="{{ .category }}"
+                data-category-id="{{ .category_id }}"
+                data-mapping="{{ .mapping }}"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="{{ .theme }}"
+                data-lang="{{ .lang }}"
+                crossorigin="anonymous"
+                async>
+        </script>
+        {{ end }}
     {{ end }}
 </div>
