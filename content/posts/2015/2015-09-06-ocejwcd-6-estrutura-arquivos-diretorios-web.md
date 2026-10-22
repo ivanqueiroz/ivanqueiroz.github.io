@@ -1,10 +1,8 @@
 ---
-categories:
-- java
-- certificação
-- ocejwcd
+categories: [ "java", "certificação", "ocejwcd" ]
 date: "2015-09-06T00:00:00Z"
 title: '[OCEJWCD 6] - A Estrutura de Arquivos e Diretórios das Aplicações Web'
+description: "Estrutura de arquivos e diretórios de uma aplicação web Java, com uma introdução ao padrão MVC no contexto da certificação OCEJWCD 6."
 url: /2015/09/ocejwcd-6-estrutura-arquivos-diretorios-web.html
 tags: [ "java", "certificação", "ocejwcd" ]
 ---

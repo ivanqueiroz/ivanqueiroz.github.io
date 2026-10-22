@@ -1,9 +1,8 @@
 ---
-categories:
-  - nosql
-  - banco de dados
+categories: [ "nosql", "banco de dados" ]
 date: "2017-01-28T00:00:00Z"
 title: O que devo saber sobre NoSQL?
+description: "Introdução ao NoSQL: o que motivou alternativas ao modelo relacional, como escalabilidade e baixo tempo de resposta na leitura de dados."
 url: /2017/01/o-que-devo-saber-sobre-nosql.html
 tags: [ "nosql", "banco de dados" ]
 ---

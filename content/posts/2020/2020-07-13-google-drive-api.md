@@ -1,10 +1,8 @@
 ---
-categories:
-  - api
-  - dados
-  - ferramentas
+categories: [ "api", "dados", "ferramentas" ]
 date: "2020-07-13T00:00:00Z"
 title: Utilizando a API do Google Drive
+description: "Como construir um programa em Java para baixar e excluir arquivos no Google Drive usando a API oficial do Google."
 url: /2020/07/2020-07-13-google-drive-api.html
 tags: [ "java", "google", "api" ]
 ---

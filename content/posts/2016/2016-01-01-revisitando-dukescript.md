@@ -1,10 +1,8 @@
 ---
-categories:
-  - java
-  - dukescript
-  - html5
+categories: [ "java", "dukescript", "html5" ]
 date: "2016-01-01T00:00:00Z"
 title: Revisitando o Dukescript
+description: "Impressões pessoais sobre o DukeScript após uma experiência prática com a tecnologia, destacando pontos como binários multiplataforma e separação MVC."
 url: /2016/01/revisitando-dukescript.html
 tags: [ "java", "dukescript", "html5" ]
 ---

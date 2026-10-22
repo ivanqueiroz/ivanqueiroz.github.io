@@ -1,11 +1,8 @@
 ---
-categories:
-  - kafka
-  - mensageria
-  - dados
-  - ferramentas
+categories: [ "kafka", "mensageria", "dados", "ferramentas" ]
 date: "2020-09-26T00:00:00Z"
 title: Criando consumers e producers em Kafka com Java
+description: "Como criar producers e consumers em Java para trabalhar com tópicos do Apache Kafka, continuação do post sobre conceitos do Kafka."
 url: /2020/09/2020-09-26-consumer-producer-kafka.html
 tags: [ "kafka", "java", "stream", "mensageria" ]
 ---

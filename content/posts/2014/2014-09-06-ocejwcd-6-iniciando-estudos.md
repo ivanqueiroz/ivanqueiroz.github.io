@@ -1,10 +1,8 @@
 ---
-categories:
-- java
-- certificação
-- ocejwcd
+categories: [ "java", "certificação", "ocejwcd" ]
 date: "2014-09-06T00:00:00Z"
 title: '[OCEJWCD 6] - Iniciando Estudos'
+description: "Início dos estudos para a certificação OCEJWCD 6, com o plano de retomar o blog e abordar os temas à medida que forem estudados."
 url: /2014/09/ocejwcd-6-iniciando-estudos.html
 tags: [ "java", "certificação", "ocejwcd" ]
 ---

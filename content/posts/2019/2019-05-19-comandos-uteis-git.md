@@ -1,10 +1,8 @@
 ---
-categories:
-  - git
-  - comandos
-  - util
+categories: [ "git", "comandos", "util" ]
 date: "2019-05-19T00:00:00Z"
 title: Comandos Úteis do Git
+description: "Comandos úteis do Git para o dia a dia, reunidos a partir de pesquisas feitas em momentos de aperto com versionamento de código."
 url: /2019/05/2019-05-19-comandos-uteis-git.html
 tags: [ "git", "terminal", "vcs" ]
 ---

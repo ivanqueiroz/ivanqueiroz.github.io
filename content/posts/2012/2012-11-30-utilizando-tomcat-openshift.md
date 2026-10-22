@@ -1,11 +1,8 @@
 ---
-categories:
-- java
-- dicas
-- tomcat
-- openshift
+categories: [ "java", "dicas", "tomcat", "openshift" ]
 date: "2012-11-30T00:00:00Z"
 title: Utilizando Tomcat 6 nas nuvens com o OpenShift
+description: "Como hospedar uma aplicação Java com Tomcat 6 na nuvem usando o OpenShift, plataforma PaaS da Red Hat, para publicar o currículo on-line."
 url: /2012/11/utilizando-tomcat-openshift.html
 tags: [ "java", "dicas", "ocejwcd", "tomcat", "cloud" ]
 ---

@@ -1,10 +1,8 @@
 ---
-categories:
-  - java
-  - certificação
-  - ocejwcd
+categories: [ "java", "certificação", "ocejwcd" ]
 date: "2015-04-13T00:00:00Z"
 title: '[OCEJWCD 6] - Respondendo o cliente'
+description: "Benefícios da tecnologia Servlet em Java e como o servlet responde ao cliente HTTP, parte da série de estudos para a certificação OCEJWCD 6."
 url: /2015/04/ocejwcd-6-respondendo-o-cliente.html
 tags: [ "java", "certificação", "ocejwcd" ]
 ---

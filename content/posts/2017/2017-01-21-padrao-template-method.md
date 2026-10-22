@@ -1,11 +1,8 @@
 ---
-categories:
-  - java
-  - padroes
-  - design
-  - comportamental
+categories: [ "java", "padroes", "design", "comportamental" ]
 date: "2017-01-21T00:00:00Z"
 title: 'Revisando Padrões com Java 8: O Padrão Template Method'
+description: "O padrão Template Method explicado com exemplos em Java 8, continuando a série de padrões de projeto iniciada com o Strategy."
 url: /2017/01/revisando-padroes-java-8-template-method.html
 tags: [ "java", "padrões", "design", "comportamental", "gof" ]
 ---
