@@ -27,11 +27,6 @@ a:hover {
 /* Set font families */
 
 @font-face {
-    font-family: LilitaOne-Regular;
-    src: url('/fonts/LilitaOne-Regular.ttf');
-}
-
-@font-face {
     font-family: Roboto-Medium;
     src: url('/fonts/Roboto-Medium.ttf');
 }
