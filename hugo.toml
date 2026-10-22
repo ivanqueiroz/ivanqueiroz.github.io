@@ -8,12 +8,6 @@ pluralizelisttitles = false
 #[markup.goldmark.renderer]
 #    unsafe = true
 
-[services]
-    [services.disqus]
-        shortname = 'blogivanqueiroz'
-# NOTE: If using Disqus as commenting engine, uncomment and configure this line
-disqusShortname = "blogivanqueiroz"
-
 [params]
     plausible = true
     plausible_domain = "ivanqueiroz.dev"
@@ -106,6 +100,24 @@ disqusShortname = "blogivanqueiroz"
     # For this to work though og_image and brand_url must be a path inside the assets directory
     # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
+
+# Giscus comments (GitHub Discussions). The widget is rendered only when category_id is set.
+# repo_id was read via `gh api graphql` (repository.id) on 2026-10-22.
+# category / category_id are still EMPTY PLACEHOLDERS: GitHub Discussions is disabled on
+# ivanqueiroz/ivanqueiroz.github.io, so no category exists yet. To finish the setup:
+#   1. Enable Discussions: Settings > General > Features > Discussions (or `gh api -X PATCH repos/ivanqueiroz/ivanqueiroz.github.io -F has_discussions=true`).
+#   2. Install the giscus app on the repo: https://github.com/apps/giscus
+#   3. Create a category (e.g. "Comments", type Announcement) and get its ID from
+#      https://giscus.app or with: gh api graphql -f query='query{repository(owner:"ivanqueiroz",name:"ivanqueiroz.github.io"){discussionCategories(first:25){nodes{id name}}}}'
+#   4. Paste the category name into `category` and the ID into `category_id` below.
+[params.giscus]
+    repo = "ivanqueiroz/ivanqueiroz.github.io"
+    repo_id = "MDEwOlJlcG9zaXRvcnkzNzg5MzEzOQ=="
+    category = ""       # [ENTER CATEGORY NAME HERE]
+    category_id = ""    # [ENTER CATEGORY ID HERE]
+    mapping = "pathname"
+    lang = "pt"
+    theme = "preferred_color_scheme"
 
 [params.author]
     name = "Ivan Queiroz"
