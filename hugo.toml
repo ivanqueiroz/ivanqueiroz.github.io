@@ -113,8 +113,8 @@ pluralizelisttitles = false
 [params.giscus]
     repo = "ivanqueiroz/ivanqueiroz.github.io"
     repo_id = "MDEwOlJlcG9zaXRvcnkzNzg5MzEzOQ=="
-    category = ""       # [ENTER CATEGORY NAME HERE]
-    category_id = ""    # [ENTER CATEGORY ID HERE]
+    category = "Announcements"
+    category_id = "DIC_kwDOAkI0E84DJWdj"
     mapping = "pathname"
     lang = "pt"
     theme = "preferred_color_scheme"
