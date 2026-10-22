@@ -1,11 +1,8 @@
 ---
-categories:
-  - kotlin
-  - spring
-  - java
-  - desenvolvimento
+categories: [ "kotlin", "spring", "java", "desenvolvimento" ]
 date: "2019-04-26T00:00:00Z"
 title: Do Java ao Kotlin com Spring Boot
+description: "Como migrei o código do meu currículo on-line de Java para Kotlin com Spring Boot e como foi a experiência."
 url: /2019/04/java-kotlin-spring-boot.html
 tags: [ "kotlin", "java" ]
 ---

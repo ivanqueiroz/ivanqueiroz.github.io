@@ -1,10 +1,8 @@
 ---
-categories:
-  - java
-  - certificação
-  - ocejwcd
+categories: [ "java", "certificação", "ocejwcd" ]
 date: "2015-11-21T00:00:00Z"
 title: '[OCEJWCD 6] - Criando um Servlet Simples'
+description: "Passo a passo para criar, compilar e implantar um servlet simples no Tomcat, incluindo a configuração do web.xml (deployment descriptor)."
 url: /2015/09/ocejwcd-6-criando-servlet-simples.html
 tags: [ "java", "certificação", "ocejwcd" ]
 ---

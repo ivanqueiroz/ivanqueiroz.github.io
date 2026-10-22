@@ -1,11 +1,8 @@
 ---
-categories:
-  - java
-  - padroes
-  - design
-  - criacional
+categories: [ "java", "padroes", "design", "criacional" ]
 date: "2017-02-28T00:00:00Z"
 title: O Padrão Builder
+description: "O padrão Builder: como construir objetos com muitas propriedades de forma legível, evitando construtores complexos."
 url: /2017/02/o-padrao-builder.html
 tags: [ "java", "padrões", "design", "criacional", "gof" ]
 ---

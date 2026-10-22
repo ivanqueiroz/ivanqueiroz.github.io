@@ -1,10 +1,8 @@
 ---
-categories:
-  - go
-  - golang
-  - programação
+categories: [ "go", "golang", "programação" ]
 date: "2015-07-13T00:00:00Z"
 title: Navegando na Web com o Go/Golang
+description: "Como fazer chamadas HTTP em Go (Golang) para consumir a API web da Steam, retomando os estudos da linguagem."
 tags: [ "go", "golang", "programação" ]
 ---
 

@@ -1,11 +1,8 @@
 ---
-categories:
-  - java
-  - linguagem
-  - funcional
-  - programação
+categories: [ "java", "linguagem", "funcional", "programação" ]
 date: "2019-08-18T00:00:00Z"
 title: Interfaces Funcionais no Java 8
+description: "Tradução de artigo da Baeldung sobre as interfaces funcionais do Java 8 e como utilizá-las na prática."
 url: /2019/05/2019-08-18-interfaces-funcionais-java.html
 tags: [ "algoritmo", "java", "funcional", "programação" ]
 ---

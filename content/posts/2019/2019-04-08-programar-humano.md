@@ -1,11 +1,8 @@
 ---
-categories:
-  - desenvolvimento
-  - offtopic
-  - stress
-  - ansiedade
+categories: [ "desenvolvimento", "offtopic", "stress", "ansiedade" ]
 date: "2019-04-08T00:00:00Z"
 title: Programar é ciência humana
+description: "Reflexão sobre a programação como ciência humana: a origem da atividade, a relação com a criatividade e o lado emocional da profissão."
 url: /2019/04/programar-e-humano.html
 tags: [ "programação", "papo", "desenvolvimento" ]
 ---

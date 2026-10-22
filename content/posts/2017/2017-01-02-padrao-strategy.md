@@ -1,11 +1,8 @@
 ---
-categories:
-  - java
-  - padroes
-  - design
-  - comportamental
+categories: [ "java", "padroes", "design", "comportamental" ]
 date: "2017-01-02T00:00:00Z"
 title: 'Revisando Padrões com Java 8: O Padrão Strategy'
+description: "Primeiro post da série sobre padrões de projeto com Java 8: o padrão Strategy, seu uso, vantagens e desvantagens."
 url: /2017/01/revisando-padroes-java-8-o-padrao-strategy.html
 tags: [ "padrões", "java", "linguagem", "plataforma", "ferramentas", "gof" ]
 ---

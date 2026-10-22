@@ -1,12 +1,8 @@
 ---
-categories:
-  - java
-  - linguagem
-  - plataforma
-  - ferramentas
-  - kotlin
+categories: [ "java", "linguagem", "plataforma", "ferramentas", "kotlin" ]
 date: "2017-01-15T00:00:00Z"
 title: 'Linguagens da JVM: Kotlin'
+description: "Visão geral das linguagens da JVM, como o Kotlin, e das formas de executá-las na Java Virtual Machine: bytecode ou engines via JSR 223."
 url: /2017/01/linguagens-jvm-kotlin.html
 tags: [ "kotlin", "java", "linguagem", "plataforma", "ferramentas" ]
 ---

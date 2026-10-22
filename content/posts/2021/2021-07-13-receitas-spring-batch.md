@@ -1,13 +1,10 @@
 ---
-categories:
-- spring
-- batch
-- dados
-- ferramentas
+categories: [ "spring", "batch", "dados", "ferramentas" ]
 date: "2021-07-13T00:00:00Z"
 title: Dicas de Spring Batch
+description: "Dicas práticas para criar aplicações em lote com Spring Batch, framework que padroniza o código de processamento batch em Java."
 url: /2020/13/2021-07-13-receitas-spring-batch.html
-tags: ["spring", "batch", "java"]
+tags: [ "spring", "batch", "java" ]
 ---
 
 Costuma criar aplicações em lote em Java? Pois, saiba que além de ter uma [especificação](https://jcp.org/en/jsr/detail?id=352) para tratar essas aplicações, há

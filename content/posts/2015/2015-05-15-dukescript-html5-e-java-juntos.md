@@ -1,10 +1,8 @@
 ---
-categories:
-  - java
-  - dukescript
-  - html5
+categories: [ "java", "dukescript", "html5" ]
 date: "2015-05-15T00:00:00Z"
 title: DukeScript - HTML5 e Java juntos
+description: "Apresentação do DukeScript, tecnologia que permite escrever código Java rodando em vários dispositivos, com HTML5 e JavaScript na interface."
 url: /2015/05/dukescript-html5-e-java-juntos.html
 tags: [ "java", "dukescript", "html5" ]
 ---

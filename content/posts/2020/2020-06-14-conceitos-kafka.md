@@ -1,11 +1,8 @@
 ---
-categories:
-  - kafka
-  - mensageria
-  - dados
-  - ferramentas
+categories: [ "kafka", "mensageria", "dados", "ferramentas" ]
 date: "2020-06-14T00:00:00Z"
 title: Conceitos e introdução ao Kafka
+description: "Conceitos básicos do Apache Kafka como plataforma de streaming de dados e as primeiras impressões sobre a ferramenta."
 url: /2020/06/2020-06-14-conceitos-kafka.html
 tags: [ "kafka", "java", "stream", "mensageria" ]
 ---

@@ -1,10 +1,8 @@
 ---
-categories:
-  - go
-  - golang
-  - programação
+categories: [ "go", "golang", "programação" ]
 date: "2015-04-21T00:00:00Z"
 title: Aprendendo GO/GOLANG
+description: "Primeiros passos com a linguagem Go (Golang): motivações para aprender uma linguagem diferente do Java, com goroutines e duck typing."
 url: /2015/04/aprendendo-gogolang.html
 tags: [ "go", "golang", "programação" ]
 ---

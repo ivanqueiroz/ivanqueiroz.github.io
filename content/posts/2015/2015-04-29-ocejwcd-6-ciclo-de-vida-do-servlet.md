@@ -1,10 +1,8 @@
 ---
-categories:
-  - java
-  - certificação
-  - ocejwcd
+categories: [ "java", "certificação", "ocejwcd" ]
 date: "2015-04-29T00:00:00Z"
 title: '[OCEJWCD 6] - Ciclo de Vida do Servlet'
+description: "Os estágios do ciclo de vida de um servlet (carregamento, instanciação, inicialização, serviço e destruição) e a interação cliente-servidor."
 url: /2015/04/ocejwcd-6-ciclo-de-vida-do-servlet.html
 tags: [ "java", "certificação", "ocejwcd" ]
 ---

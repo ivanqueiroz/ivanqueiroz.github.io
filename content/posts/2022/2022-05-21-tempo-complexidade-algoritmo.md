@@ -1,10 +1,8 @@
 ---
-categories:
-  - algoritmos
-  - metodologias
-  - dados
+categories: [ "algoritmos", "metodologias", "dados" ]
 date: "2022-05-21T00:00:00Z"
 title: Complexidade e performance de um algoritmo
+description: "Explicação da notação big-O e da complexidade de tempo e desempenho de algoritmos, com o que ela descreve e onde é usada."
 url: /2022/05/2022-05-21-codigos-entrevistas-parte1.html
 tags: [ "algoritmo", "kotlin", "java" ]
 kotlinplay: true

@@ -1,11 +1,8 @@
 ---
-categories:
-  - java
-  - linguagem
-  - história
-  - programação
+categories: [ "java", "linguagem", "história", "programação" ]
 date: "2019-05-27T00:00:00Z"
 title: 'Java: do carvalho ao café!'
+description: "A história da plataforma Java, do projeto de origem à comunidade de usuários, no aniversário de 24 anos da tecnologia."
 url: /2019/05/2019-05-27-historia-java.html
 tags: [ "java" ]
 ---

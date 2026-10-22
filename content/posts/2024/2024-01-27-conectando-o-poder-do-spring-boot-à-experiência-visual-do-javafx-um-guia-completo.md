@@ -1,19 +1,10 @@
 ---
 title: "Integração Poderosa: Spring Boot + JavaFX"
-description: ""
+description: "Guia para combinar Spring Boot e JavaFX na criação de aplicações desktop modernas, unindo injeção de dependência e interface gráfica."
 date: 2024-01-27T15:19:52.666Z
 preview: ""
-tags:
-  [
-    spring boot,
-    javafx,
-    java,
-    desenvolvimento,
-    programação,
-    ui,
-    aplicações desktop,
-  ]
-categories: [javafx, spring boot, java, programação, aplicações desktop]
+tags: [ "spring boot", "javafx", "java", "desenvolvimento", "programação", "ui", "aplicações desktop" ]
+categories: [ "javafx", "spring boot", "java", "programação", "aplicações desktop" ]
 ---
 
 Este artigo tem como objetivo mostrar como é possível combinar o Spring Boot e o JavaFx, permitindo a criação de aplicações desktop, modernas e eficientes. O Spring Boot é uma ferramenta poderosa para a criação de aplicativos e conta um excelente gerenciador de injeção de dependência que permite a criação de aplicação Java de forma rápida e fácil. O JavaFx, por sua vez, é uma biblioteca gráfica para a criação de interfaces de usuário em Java. Para isso será mostrada uma aplicação de controle de tarefas utilizando Kanban.

@@ -1,12 +1,8 @@
 ---
-categories:
-  - java
-  - nosql
-  - banco de dados
-  - ferramentas
-  - grafos
+categories: [ "java", "nosql", "banco de dados", "ferramentas", "grafos" ]
 date: "2017-05-28T00:00:00Z"
 title: Banco de Grafos Neo4j
+description: "Introdução ao banco de grafos Neo4j, que foca nos relacionamentos entre registros e é uma alternativa ao modelo relacional."
 url: /2017/04/banco-grafos-neo4j.html
 tags: [ "java", "nosql", "banco de dados", "ferramentas", "grafos" ]
 ---

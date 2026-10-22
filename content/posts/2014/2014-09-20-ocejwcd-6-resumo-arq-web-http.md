@@ -1,10 +1,8 @@
 ---
-categories:
-  - java
-  - certificação
-  - ocejwcd
+categories: [ "java", "certificação", "ocejwcd" ]
 date: "2014-09-20T00:00:00Z"
 title: '[OCEJWCD 6] - Resumo da Arquitetura Web e o Protocolo HTTP'
+description: "Resumo da arquitetura web cliente-servidor e do protocolo HTTP, com requisição, resposta e conceitos necessários para a certificação OCEJWCD 6."
 url: /2014/09/ocejwcd-6-resumo-da-arquitetura-web-e-o.html
 tags: [ "java", "certificação", "ocejwcd" ]
 ---

@@ -1,17 +1,10 @@
 ---
 title: "Meu Retorno ao Kotlin Após 3 Anos"
-description: ""
+description: "Reflexões sobre o retorno ao Kotlin após três anos explorando Elixir e Rust, e como a linguagem evoluiu nesse período."
 date: 2025-05-23T19:02:52.666Z
 preview: ""
-tags:
-  [
-    spring boot,
-    kotlin,
-    java,
-    desenvolvimento,
-    programação
-  ]
-categories: [kotlin, spring boot, java, programação]
+tags: [ "spring boot", "kotlin", "java", "desenvolvimento", "programação" ]
+categories: [ "kotlin", "spring boot", "java", "programação" ]
 ---
 
 Voltar a uma linguagem de programação após um hiato, especialmente uma tão dinâmica quanto o Kotlin, é como reencontrar um velho amigo que passou por muitas transformações. Nos últimos três anos, enquanto explorava os paradigmas funcionais de Elixir e a segurança de Rust, o Kotlin não ficou parado. Pelo contrário, evoluiu significativamente, tanto na linguagem em si quanto em seu robusto ecossistema. Neste artigo, compartilho minhas impressões e aprendizados ao revisitar o Kotlin, focando nas mudanças que mais me impactaram e na experiência de reintegrá-lo ao meu fluxo de trabalho, especialmente com o Spring Boot.

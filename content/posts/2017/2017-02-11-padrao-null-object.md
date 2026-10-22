@@ -1,11 +1,8 @@
 ---
-categories:
-  - java
-  - padroes
-  - design
-  - comportamental
+categories: [ "java", "padroes", "design", "comportamental" ]
 date: "2017-02-11T00:00:00Z"
 title: 'Revisando Padrões com Java 8: O Padrão Null Object'
+description: "O padrão Null Object em Java: como evitar verificações de referência nula usando um objeto com comportamento neutro."
 url: /2017/01/revisando-padroes-java-8-null-object.html
 tags: [ "java", "padrões", "design", "comportamental", "gof" ]
 ---

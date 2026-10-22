@@ -1,11 +1,8 @@
 ---
-categories:
-  - engenharia
-  - software
-  - gestao
-  - metodologia
+categories: [ "engenharia", "software", "gestao", "metodologia" ]
 date: "2020-12-26T00:00:00Z"
 title: 'Leitura do livro: O Mítico Homem-Mês'
+description: "Impressões sobre o livro O Mítico Homem-Mês, de Frederick P. Brooks Jr., um clássico da engenharia de software sobre gestão de projetos."
 url: /2020/12/2020-12-26-livro-mitico-homem-mes.html
 tags: [ "algoritmo", "kotlin" ]
 ---

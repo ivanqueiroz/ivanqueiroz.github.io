@@ -1,10 +1,8 @@
 ---
-categories:
-  - api
-  - dados
-  - ferramentas
+categories: [ "api", "dados", "ferramentas" ]
 date: "2020-08-08T00:00:00Z"
 title: Reconhecimento de Imagem em Java com Tesseract e Tess4J
+description: "Como extrair texto editável de imagens em Java usando OCR com o Tesseract e o wrapper Tess4J."
 url: /2020/07/2020-08-30-ocr-java-tesseract-tess4j.html
 tags: [ "java", "ocr" ]
 ---
