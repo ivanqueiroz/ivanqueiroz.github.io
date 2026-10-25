@@ -51,10 +51,10 @@ e) **Ortografia.** pt-BR pelo Acordo Ortográfico (ex.: "ideia", sem acento). Co
    **Como rodar:** o dicionário `pt_BR` está instalado (pacote `hunspell-pt-br`, AUR). Antes de checar, tire blocos de código, código inline e links, para reduzir ruído:
 
    ~~~bash
-   sed '/^```/,/^```/d' post.md | sed -E 's/`[^`]*`//g; s/\]\([^)]*\)/]/g; s/\{\{<[^>]*>\}\}//g' | hunspell -d pt_BR -l | sort -u
+   sed '/^```/,/^```/d' post.md | sed -E 's/`[^`]*`//g; s/\]\([^)]*\)/]/g; s/\{\{<[^>]*>\}\}//g' | hunspell -d pt_BR -p docs/dicionario-tecnico.txt -l | sort -u
    ~~~
 
-   A saída traz muitos falsos positivos: nomes próprios e termos técnicos em inglês (Spring, JavaFX, desktop, framework...). Ignore esses e foque no que for palavra do português. O `hunspell` pega erro de grafia e acento (`idéia`, `voce`, `an`), mas **não** pega concordância, crase, pontuação nem palavra certa no lugar errado (ex.: "grãos" no lugar de *beans*), então a leitura manual continua obrigatória. Se o dicionário não existir (`hunspell -d pt_BR -l` falha), faça só a revisão manual e avise no PR.
+   O arquivo `docs/dicionario-tecnico.txt` é o dicionário pessoal: termos técnicos e nomes próprios já aceitos (Spring, JavaFX, branch, commit, framework...). Só entra palavra ali com confirmação do Ivan, e nunca um erro de digitação; o agente propõe e o Ivan aprova. A saída ainda traz falsos positivos (identificadores de código citados no texto, frases em inglês, termos novos): descarte-os e foque no que for palavra do português. O `hunspell` pega erro de grafia e acento (`idéia`, `voce`, `an`), mas **não** pega concordância, crase, pontuação nem palavra certa no lugar errado (ex.: "grãos" no lugar de *beans*), então a leitura manual continua obrigatória. Se o dicionário não existir (`hunspell -d pt_BR -l` falha), faça só a revisão manual e avise no PR.
 
 f) **Posts publicados.** O Revisor só aponta problemas em posts já publicados e nunca edita sozinho, porque mexer altera o histórico e as URLs. Edição só com autorização explícita do Ivan.
 
