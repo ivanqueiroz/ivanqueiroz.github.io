@@ -7,7 +7,7 @@ categories: [ ]
 draft: true  # só o Ivan remove; o agente nunca publica
 ---
 
-<!-- Formato: TIL, 300-500 palavras. Vai direto ao ponto e tem um exemplo. Sem "Concluindo". -->
+<!-- Formato: TIL, 300-500 palavras. Vai direto ao ponto e tem um exemplo. Sem "Conclusão". -->
 <!-- Guia de estilo: docs/estilo-de-escrita.md -->
 
 <!-- TODO(ivan): o problema ou a dúvida, em 1-2 frases, sem preâmbulo -->

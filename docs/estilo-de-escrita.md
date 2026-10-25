@@ -2,7 +2,7 @@
 
 Guia para escrever posts no tom do Ivan Queiroz. Serve de referência para o Redator e o Revisor (ver [AGENTS.md](../AGENTS.md)).
 
-Derivado em 2026-10-25 a partir dos 32 posts em `content/posts/` e de `content/about/_index.md`. Peso maior para os recentes: `content/posts/2024/` (1 post) e `content/posts/2025/` (1 post). Os posts de 2012 a 2022 servem para as constantes. Com só dois posts recentes, a amostra é pequena: tudo que for inferência fraca está marcado com um `<!-- TODO(ivan): ... -->`.
+Derivado em 2026-10-25 a partir dos 32 posts em `content/posts/` e de `content/about/_index.md`. Peso maior para o post de 2024 e para os de 2012 a 2022, que servem para as constantes. **O post de 2025 (`content/posts/2025/`) foi criado por um agente de IA** (confirmado pelo Ivan em 2026-10-25): ele não é referência de voz, e o que o guia cita dele serve só como contraexemplo ou para estrutura. Com pouco material recente, a amostra é pequena: tudo que for inferência fraca está marcado com um `<!-- TODO(ivan): ... -->`. Melhorar este guia, principalmente a voz, é uma tarefa futura.
 
 Este guia descreve o que os posts fazem. Ele não é uma lista de regras para o agente inventar texto no mesmo molde.
 
@@ -36,20 +36,20 @@ Antes de a abertura, costuma haver a **epígrafe** (ver abaixo).
 ### Títulos
 
 - `##` para seções principais, `###` para subseções. Os posts de 2019-2020 usam `#` no corpo; evite, porque o título já vem do front matter.
-- **Caixa dos títulos:** mistura. Em 2022 e 2024 são frases (`## O que é o big-O?`, `## Uma aplicação Kanban para desktop`). Em 2019 há os dois (`## Morre o Star7 e nasce o Java` e `## Grandes Evoluções`). O post de 2025 usa Title Case (`## O Que Mudou no Kotlin (e no Ecossistema) nos Últimos 3 Anos?`). Recomendação: frases. <!-- TODO(ivan): confirmar a caixa dos títulos. -->
+- **Caixa dos títulos:** mistura. Em 2022 e 2024 são frases (`## O que é o big-O?`, `## Uma aplicação Kanban para desktop`). Em 2019 há os dois (`## Morre o Star7 e nasce o Java` e `## Grandes Evoluções`). O post de 2025 usa Title Case (`## O Que Mudou no Kotlin (e no Ecossistema) nos Últimos 3 Anos?`), mas ele foi criado por IA. **Decisão do Ivan:** frases sucintas que expressam a ideia do artigo, em caixa de frase (só a primeira palavra e nomes próprios em maiúscula), sem Title Case.
 - Títulos com dois-pontos (`## Primeira dica: ...`, em 2021; `### Avanços em Frameworks: Ktor e Spring Boot`, em 2025) aparecem em alguns posts. Não aparecem nos de 2024.
 
 ### Fechamento
 
 - **Recentes (2024, 2025):** parágrafos de recapitulação, sem assinatura. "Esse artigo mostrou como configurar uma aplicação..." (2024, linha 329). O de 2025 convida a comentar: "Se você, leitor, também passou por uma experiência semelhante [...] adoraria ouvir sua história." (linha 184).
 - **Antigos (2012-2022):** assinatura do tipo "Um forte abraço e até a próxima." Não aparece em 2024 nem em 2025.
-- <!-- TODO(ivan): confirmar se a assinatura deve voltar. O archetype novo tem `## Concluindo`, e o Giscus está ativo (commit 7c446aa). -->
+- **Decisão do Ivan:** a assinatura "Um forte abraço e até a próxima." pode ser mantida. Ela vai como último parágrafo da `## Conclusão`, antes da seção Fontes, como nos posts antigos.
 
 ### Seção Fontes
 
 - Vem no fim, depois da conclusão. Os nomes variam: `## Fontes` (2017-2024), `## Referências` (2025), `## Créditos` (2017, quando o post tem código no GitHub).
 - Ver [seção 8](#8-links-e-fontes).
-- O archetype novo usa `## Concluindo` e `## Fontes`, como a especificação pede. Os recentes usam `## Conclusão`. <!-- TODO(ivan): confirmar o nome do título final: Concluindo (archetype) ou Conclusão (2024-2025). -->
+- **Decisão do Ivan:** o título final é `## Conclusão`, seguido de `## Fontes`. Os posts antigos têm variações (`## Finalizando`, `## Concluindo`); não replique.
 
 ## 3. Ritmo e tamanho de parágrafos
 
@@ -74,7 +74,7 @@ Construções observadas (contagem aproximada por grep, por linha):
 ## 5. Termos em inglês
 
 - Termos técnicos ficam em inglês quando são o nome oficial: `framework`, `starter`, `data classes`, `extension functions`, `coroutines`, `streaming`, `drag and drop`. Não traduza: o post de 2024 traduziu "beans" e "Spring" de forma errada (ver seção 9).
-- Itálico no primeiro uso de um termo em inglês aparece em 2020 (`*streaming*`) e 2024 (`_starter_`, `_views_`). Em 2025 não há itálico para eles. Não há padrão único. <!-- TODO(ivan): confirmar se termos em inglês devem ser itálico no primeiro uso. -->
+- Itálico no primeiro uso de um termo em inglês aparece em 2020 (`*streaming*`) e 2024 (`_starter_`, `_views_`). Em 2025 não há itálico para eles. Não havia padrão único. **Decisão do Ivan:** sempre itálico (`*termo*`) em termos em inglês, a cada uso no texto corrido. Identificadores, classes e comandos continuam em crase, sem itálico.
 - Identificadores, classes, métodos e comandos vão em crase: `` `runApplication` ``, `` `@Scheduled` ``, `` `application.properties` ``.
 
 ## 6. Listas
@@ -116,7 +116,7 @@ Verificados com grep em todos os posts: zero ocorrências de "Em um mundo", "No 
 
 ### Frases que só aparecem no post de 2025
 
-"Não há como subestimar", "não mediram esforços", "é como reencontrar um velho amigo", "trunfo". Estão no post de 2025 e em nenhum dos posts de 2012-2022. Não use como padrão. <!-- TODO(ivan): confirmar se esse texto recebeu edição de terceiros ou ferramenta. -->
+"Não há como subestimar", "não mediram esforços", "é como reencontrar um velho amigo", "trunfo". Estão no post de 2025 e em nenhum dos posts de 2012-2022. Não use como padrão. O Ivan confirmou que esse post foi criado por um agente de IA; por isso as frases genéricas não representam a voz dele. A revisão desse post fica para depois.
 
 ### Erros que não devem ser copiados
 
@@ -138,7 +138,7 @@ Trechos curtos, com o arquivo e a linha de origem. Use como referência de voz, 
 3. **Versão declarada junto do código.** `content/posts/2024/2024-01-27-conectando-o-poder-do-spring-boot-à-experiência-visual-do-javafx-um-guia-completo.md:70`:
    > Estou utilizando o Java 17 para esse projeto, mas acredito que não teria problema utilizar uma versão mais recente.
 
-4. **Experiência pessoal com ressalva.** `content/posts/2025/2025-05-23-retornando-kotlin-apos-tres-anos.md:114` (dentro de um item de lista):
+4. **Experiência pessoal com ressalva.** *(post de 2025, criado por IA: serve só como estrutura, não como voz)* `content/posts/2025/2025-05-23-retornando-kotlin-apos-tres-anos.md:114` (dentro de um item de lista):
    > muitos desenvolvedores (inclusive eu, após alguma pesquisa e experimentação) optam por usar classes regulares (`class`) para entidades JPA
 
 5. **Ressalva de escopo.** `content/posts/2022/2022-05-21-tempo-complexidade-algoritmo.md:27`:
@@ -150,7 +150,7 @@ Trechos curtos, com o arquivo e a linha de origem. Use como referência de voz, 
 7. **Fontes numeradas.** `content/posts/2024/2024-01-27-conectando-o-poder-do-spring-boot-à-experiência-visual-do-javafx-um-guia-completo.md:333`:
    > 1. [Openjfx.io](https://openjfx.io/)
 
-8. **Convite ao leitor no fechamento.** `content/posts/2025/2025-05-23-retornando-kotlin-apos-tres-anos.md:184`:
+8. **Convite ao leitor no fechamento.** *(post de 2025, criado por IA: serve só como estrutura, não como voz)* `content/posts/2025/2025-05-23-retornando-kotlin-apos-tres-anos.md:184`:
    > Se você, leitor, também passou por uma experiência semelhante – seja retornando ao Kotlin após um hiato ou revisitando qualquer outra tecnologia depois de um tempo – adoraria ouvir sua história.
 
 ## 11. Checklist de revisão
@@ -159,7 +159,7 @@ Antes de abrir o PR, confira:
 
 - [ ] `draft: true` no front matter, e o arquivo foi criado com `hugo new`.
 - [ ] `title`, `description` (1-2 frases, ~150 caracteres), `date`, `tags` (minúsculas, lista inline), `categories` e `draft` preenchidos.
-- [ ] Post longo: 1.000-4.000 palavras, termina com `## Concluindo` e `## Fontes`. TIL: 300-500 palavras, um exemplo, termina com `## Fontes`.
+- [ ] Post longo: 1.000-4.000 palavras, termina com `## Conclusão` (com a assinatura "Um forte abraço e até a próxima.") e `## Fontes`. TIL: 300-500 palavras, um exemplo, termina com `## Fontes`.
 - [ ] Títulos em `##` e `###`, sem `#` no corpo.
 - [ ] Epígrafe (se houver) com autor e texto verificados.
 - [ ] Cada afirmação factual tem fonte aberta e lida, com link na seção Fontes. Nenhuma URL, versão ou número inventado.

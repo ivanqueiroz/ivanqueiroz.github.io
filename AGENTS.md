@@ -57,13 +57,13 @@ f) **Posts publicados.** O Revisor só aponta problemas em posts já publicados 
 **Post longo** (1.000-4.000 palavras)
 
 - Archetype: `archetypes/post.md`. Criação: `hugo new --kind post posts/AAAA/AAAA-MM-DD-slug.md`.
-- Abre com gancho ou epígrafe. Seções com `##`, subseções com `###`. Termina com `## Concluindo` e `## Fontes`.
+- Abre com gancho ou epígrafe. Seções com `##`, subseções com `###`. Termina com `## Conclusão`, cujo último parágrafo é a assinatura "Um forte abraço e até a próxima.", e `## Fontes`. Títulos são frases sucintas que expressam a ideia do artigo, em caixa de frase. Termos em inglês no texto corrido vão sempre em itálico (`*termo*`).
 
 **TIL** (300-500 palavras)
 
 - Archetype: `archetypes/til.md`. Criação: `hugo new --kind til posts/AAAA/AAAA-MM-DD-slug.md`.
 - Vai direto ao ponto, com um exemplo. Termina com `## Fontes`.
-- Pendente de confirmação pelo Ivan: se TILs ficam em `posts/` ou em outra seção. Não há TIL publicado no repositório ainda.
+- TILs ficam em `content/posts/AAAA/`, junto dos posts longos (decisão do Ivan).
 
 ## Regras do projeto
 

@@ -23,9 +23,11 @@ draft: true  # só o Ivan remove; o agente nunca publica
 <!-- Código: compilar/executar antes e declarar as versões no texto (ex.: "testado com Java 21 e Spring Boot 3.5"). -->
 <!-- Se não puder rodar, avisar em vez de incluir. -->
 
-## Concluindo
+## Conclusão
 
 <!-- TODO(ivan): sua experiência aqui -->
+
+Um forte abraço e até a próxima.
 
 ## Fontes
 
