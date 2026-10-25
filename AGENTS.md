@@ -48,7 +48,13 @@ c) **Experiência própria.** Nunca invente experiência ou opinião em 1ª pess
 d) **Código.** Todo exemplo é compilado ou executado antes de entrar no post, e as versões usadas são declaradas no texto (ex.: "testado com Java 21 e Spring Boot 3.5"). Se não for possível rodar, avise em vez de incluir o código.
 
 e) **Ortografia.** pt-BR pelo Acordo Ortográfico (ex.: "ideia", sem acento). Corrija grafia, acentuação, concordância, pontuação e crase sem trocar o jeito de dizer do Ivan. Rode `hunspell -d pt_BR -l < arquivo.md` quando o dicionário existir; confirme antes com `hunspell -d pt_BR -l` num texto de teste. Sem dicionário, faça revisão manual e avise no PR.
-   **Estado em 2026-10-25:** o dicionário pt_BR não está instalado (`hunspell -d pt_BR -l` falha). No Arch ele vem do AUR: `yay -S hunspell-pt-br`, que exige `sudo`, então o agente não instala e pede ao Ivan. Até isso mudar, a revisão é manual.
+   **Como rodar:** o dicionário `pt_BR` está instalado (pacote `hunspell-pt-br`, AUR). Antes de checar, tire blocos de código, código inline e links, para reduzir ruído:
+
+   ~~~bash
+   sed '/^```/,/^```/d' post.md | sed -E 's/`[^`]*`//g; s/\]\([^)]*\)/]/g; s/\{\{<[^>]*>\}\}//g' | hunspell -d pt_BR -l | sort -u
+   ~~~
+
+   A saída traz muitos falsos positivos: nomes próprios e termos técnicos em inglês (Spring, JavaFX, desktop, framework...). Ignore esses e foque no que for palavra do português. O `hunspell` pega erro de grafia e acento (`idéia`, `voce`, `an`), mas **não** pega concordância, crase, pontuação nem palavra certa no lugar errado (ex.: "grãos" no lugar de *beans*), então a leitura manual continua obrigatória. Se o dicionário não existir (`hunspell -d pt_BR -l` falha), faça só a revisão manual e avise no PR.
 
 f) **Posts publicados.** O Revisor só aponta problemas em posts já publicados e nunca edita sozinho, porque mexer altera o histórico e as URLs. Edição só com autorização explícita do Ivan.
 

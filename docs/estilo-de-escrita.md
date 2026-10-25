@@ -165,7 +165,7 @@ Antes de abrir o PR, confira:
 - [ ] Cada afirmação factual tem fonte aberta e lida, com link na seção Fontes. Nenhuma URL, versão ou número inventado.
 - [ ] Experiência em 1ª pessoa só com o que o Ivan forneceu. Lacunas marcadas com `<!-- TODO(ivan): sua experiência aqui -->`.
 - [ ] Todo código compilou ou rodou, com as versões declaradas no texto. Código que não rodou não entrou.
-- [ ] Ortografia em pt-BR pelo Acordo Ortográfico. `hunspell` rodado, ou revisão manual registrada no PR (o dicionário pt_BR não está instalado em 2026-10-25).
+- [ ] Ortografia em pt-BR pelo Acordo Ortográfico. `hunspell` rodado como no AGENTS.md (regra e), com a leitura manual feita depois; falsos positivos de termos em inglês descartados.
 - [ ] Nenhuma frase da seção 9 entrou no texto.
 - [ ] Parágrafos e listas no padrão da seção 3 e 6.
 - [ ] Shortcodes usados como na seção 7.
